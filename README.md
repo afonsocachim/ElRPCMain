@@ -98,7 +98,7 @@ export {};
 Simply create the handler inside the router
 #### Renderer
 Access it on the renderer process in the following way
-```React
+```Typescript
 function Hello() {
   const helloThere = async () => {
     const payload = await window.api.demoRouter.handlers.handleThis();
@@ -124,7 +124,7 @@ function Hello() {
 elServer.get().demoRouter.dispatchThis();
 ```
 #### Renderer
-```React
+```Typescript
 window.api.demoRouter.dispatchers.dispatchThis((_, payload) => {
   console.log('Received', payload);
 });
