@@ -71,7 +71,7 @@ const createWindow = async () => {
 
 On your preload.ts inside your main process folder add the following
 
-```
+```Typescript
 import { routerMap } from './api';
 import { enableContextBridge } from 'elRPC';
 
