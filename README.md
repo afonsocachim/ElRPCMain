@@ -96,7 +96,7 @@ declare global {
 export {};
 ```
 
-## Demo
+## Examples
 ### Handlers
 #### Main
 Simply create the handler inside the router
