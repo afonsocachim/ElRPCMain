@@ -1,5 +1,5 @@
 {
-  "name": "el-rpc",
+  "name": "elerpc",
   "version": "1.0.0",
   "description": "RPC for electron based on IPC",
   "main": "lib/index.js",
