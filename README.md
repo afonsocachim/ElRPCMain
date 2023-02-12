@@ -9,6 +9,8 @@
 npm i elerpc
 ```
 
+For a complete example of the following tutorial go to https://github.com/afonsocachim/EleRPC-Example
+
 ## Folder Structure
 
 Recommend the use of https://github.com/electron-react-boilerplate/electron-react-boilerplate
