@@ -1,9 +1,13 @@
-# elRPC
+# EleRPC
 
-- ElRPC implements remote procedure calls (RPC) for electron desktop applications using Inter Process Communication (IPC). It is written in Typescript and provides typesafety and autocompletion, so you can quickly and easily connect your frontend to your backend. 
+- EleRPC implements remote procedure calls (RPC) for electron desktop applications using Inter Process Communication (IPC). It is written in Typescript and provides typesafety and autocompletion, so you can quickly and easily connect your frontend to your backend. 
 - It is lightweight, with simple APIs and no external dependencies, so you can be sure that your applications will run smoothly. It's the perfect way to get your electron apps running quickly, and easily
 
 # Getting Started
+
+```
+npm i elerpc
+```
 
 ## Folder Structure
 
@@ -19,7 +23,7 @@ A routerMap is composed of routers, and each router has handlers and dispatchers
 *Dispatchers* are sent by the main process to the renderer process
 
 ```Typescript
-import { ClientApi, PayloadResult } from 'elRPC';
+import { ClientApi, PayloadResult } from 'elerpc';
 
 export const routerMap = {
   demoRouter: {
@@ -73,7 +77,7 @@ On your preload.ts inside your main process folder add the following
 
 ```Typescript
 import { routerMap } from './api';
-import { enableContextBridge } from 'elRPC';
+import { enableContextBridge } from 'elerpc';
 
 enableContextBridge(routerMap);
 ```
